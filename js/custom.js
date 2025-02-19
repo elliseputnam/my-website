@@ -108,6 +108,7 @@ $(document).ready(function () {
     $("#demo01").animatedModal({ modalTarget: "AMS-Modal" });
     $("#demo02").animatedModal({ modalTarget: "NLP-Modal" });
     $("#demo03").animatedModal({ modalTarget: "Fantasy-Modal" });
+    $("#demo04").animatedModal({ modalTarget: "Earthquake-Modal" });
 
 
     // Close button event for modal
