@@ -109,6 +109,10 @@ $(document).ready(function () {
     $("#demo02").animatedModal({ modalTarget: "NLP-Modal" });
     $("#demo03").animatedModal({ modalTarget: "Fantasy-Modal" });
     $("#demo04").animatedModal({ modalTarget: "Earthquake-Modal" });
+    $("#demo05").animatedModal({ modalTarget: "Clue-Modal" });
+    $("#demo06").animatedModal({ modalTarget: "Olympics-Modal" });
+    $("#demo07").animatedModal({ modalTarget: "IMDB-Modal" });
+    $("#demo08").animatedModal({ modalTarget: "MLR-Modal" });
 
 
     // Close button event for modal
