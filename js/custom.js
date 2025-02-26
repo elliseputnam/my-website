@@ -113,6 +113,7 @@ $(document).ready(function () {
     $("#demo06").animatedModal({ modalTarget: "Olympics-Modal" });
     $("#demo07").animatedModal({ modalTarget: "IMDB-Modal" });
     $("#demo08").animatedModal({ modalTarget: "MLR-Modal" });
+    $("#demo09").animatedModal({ modalTarget: "MBTI-Modal" });
 
 
     // Close button event for modal

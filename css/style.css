@@ -493,6 +493,8 @@ a.active {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
+    height: 350px; /* Set a fixed height for each portfolio item */
+    width: 350px;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -580,6 +582,9 @@ a.active {
 }
 
 .portfolio_item img {
+    width: 100%;  /* Ensure the image takes up the full width of the container */
+    height: 100%; /* Ensure the image takes up the full height of the container */
+    object-fit: cover; /* Makes sure the image covers the entire container without distorting */
     -webkit-filter: none;
     filter: none;
 }
