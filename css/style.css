@@ -589,6 +589,13 @@ a.active {
     filter: none;
 }
 
+.wrap-image {
+    float: right;  /* Moves the image to the right */
+    margin: 0 0 10px 20px;  /* Adds spacing around the image */
+    width: 300px;
+    height: auto;
+}
+
 .portfolio-padding {
     padding: 50px 0;
 }
