@@ -88,7 +88,9 @@
                 </p>
                 <p>I’ve had the opportunity to apply my data science skills across a variety of projects and experiences. From interning at Bio-Rad Laboratories, where I analyzed large datasets and created visualizations, to developing AI-enhanced tools for exam creation, I thrive on solving real-world problems with data. My projects have ranged from predicting seismic activity using decades of earthquake data to exploring the relationship between Premier League footballers’ wages and fantasy league performance. Whether working with Python, SQL, or machine learning models, I’m always excited to push the boundaries of what data can reveal.
                     I would love to connect and chat about data, sports, or your favorite hiking spot!</p>
-                <div class="h-50"></div> <img src="img/Signature.svg" width="300" alt="" />
+                
+                <p>I am currently reading <a href="https://www.amazon.com/Mindmasters-Data-Driven-Predicting-Changing-Behavior/dp/1647826314" target="_blank" rel="noopener noreferrer">Mindmasters: The Data-Driven Science of Predicting and Changing Human Behavior</a>!</p>
+                <div class="h-50"></div> <img src="img/Signature.svg" width="300" alt=""/>
                 <div class="h-50"></div>
             </div>
             <div class="col-md-6 about-img-div">
@@ -491,23 +493,61 @@
                 <div class="portfolio-padding">
                     <div class="col-md-8 col-md-offset-2">
                         <h2>Earthquake Prediction</h2>
-                        <h4>Introduction to Data Science</h4>
-                        <h5>Spring 2023</h5>
-                        <div class="h-50"></div>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> <img src="img/portfolio/MAP.jpg" alt="" class="img-responsive" />
-                        <br />
-                        <br />
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> </div>
+                        <h4>Introduction to Data Science | Spring 2023</h4>
+                        <div class="h-40"></div>
+                        <h3>Project Description</h3>
+                        <p>For this project, I analyzed earthquake data from the past 50 years to uncover patterns in seismic activity and predict fault line locations. Using earthquake records from the 
+                            <a href="https://www.usgs.gov/" target="_blank" rel="noopener noreferrer">USGS Earthquake Catalog</a> and tectonic plate data from 
+                            <a href="https://www.kaggle.com/" target="_blank" rel="noopener noreferrer">Kaggle</a>, I explored how fault lines influence the distribution of seismic activity across the Americas. The project involved cleaning, transforming, and modeling the data using machine learning techniques to identify earthquake-prone regions and predict fault line locations.
+                        </p>
+                        <img src="img/portfolio/MAP.png" alt="" class="img-responsive wrap-image" style="width: 300px; height: auto;" />
+    
+                        <h3>Key Concepts</h3>
+                        <strong>Earthquake Clusters and Fault Lines:</strong>
+                        <ul>
+                            <li>The model identified 12 distinct clusters of seismic activity, mainly along the western coasts of North, Central, and South America. These areas correspond closely with known tectonic plate boundaries, including the Pacific Ring of Fire, which is famous for frequent seismic activity.</li>
+                            <li>Clusters of seismic activity often showed stronger earthquake magnitudes in the coastal regions, reflecting high seismic potential along major fault lines.</li>
+                        </ul>
+    
+                        <strong>Prediction of Fault Line Locations:</strong>
+                        <ul>
+                            <li>Using Gaussian Mixture Models (GMM), I successfully predicted fault lines that closely align with known geological structures, such as the San Andreas Fault and the Cascadia Subduction Zone.</li>
+                            <li>By modeling earthquake data with GMM, I was able to classify earthquake-prone regions, helping us understand where future seismic activity is likely to occur.</li>
+                        </ul>
+                        
+                        <img src="img/portfolio/heatmap.png" alt="" class="img-responsive wrap-image" style="width: 350px; height: auto;" />
+
+                        <strong>Seismic Hotspots:</strong>
+                        <ul>
+                            <li>The western coasts of the Americas emerged as the most seismically active regions, with higher earthquake magnitudes and frequencies along these fault lines. The data highlighted regions in California, Alaska, and Chile as major seismic hotspots.</li>
+                            <li>Understanding these hotspots provides crucial information for preparedness, helping governments and organizations plan for potential disasters.</li>
+                        </ul>
+    
+                        <strong>Challenges with Continuous Fault Lines:</strong>
+                        <ul>
+                            <li>Defining an accuracy metric for continuous fault lines proved difficult, as traditional evaluation methods such as accuracy or F1 scores don’t apply directly to continuous geographic data.</li>
+                            <li>Instead, the accuracy of the model was evaluated by comparing the predicted fault line locations to known fault lines using geospatial distance metrics, such as the Root Mean Squared Error (RMSE).</li>
+                        </ul>
+    
+                        <h3>Skills</h3>
+                        <ul>
+                            <li><strong>Data Preprocessing & Transformation:</strong> Cleaned and transformed seismic data, handling missing values, filtering relevant features, and removing unnecessary data.</li>
+                            <li><strong>Unsupervised Learning:</strong> Applied Gaussian Mixture Models (GMM) to identify clusters of seismic activity and predict fault lines.</li>
+                            <li><strong>Geospatial Data Visualization:</strong> Used GeoPandas and Matplotlib to visualize earthquake data, including heatmaps and geospatial distributions.</li>
+                            <li><strong>Machine Learning Workflow:</strong> Implemented an end-to-end workflow from data collection to model evaluation, experimenting with different GMM variants to improve accuracy.</li>
+                        </ul>
+                        <h3>Download Report</h3>
+                        <a href="/Users/elliseputnam/Desktop/my-website/reports/Data_Science_Project (1).pdf" target="_blank" rel="noopener noreferrer">
+                            <button>Download PDF</button>
+                        </a>
+                        <br>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!--DEMO05-->
     <div id="Clue-Modal" class="animated-modal">
@@ -592,8 +632,13 @@
                             <li><strong>Data Insights & Visualization Preparation:</strong> Structured data into meaningful views to enable easier analysis and visualization.</li>
                             <li><strong>Database Management:</strong> Worked with large datasets efficiently, ensuring optimized queries for performance.</li>
                           </ul>
+                        <h3>Download Report</h3>
+                        <a href="/Users/elliseputnam/Desktop/my-website/reports/README.txt" target="_blank" rel="noopener noreferrer">
+                            <button>Download .txt</button>
+                        </a>
                         <br />
-                        <br /> </div>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -612,21 +657,72 @@
                         <h2>Movie Review Sentiment Classifier</h2>
                         <h4>Advanced Machine Learning</h4>
                         <h5>Fall 2024</h5>
-                        <div class="h-50"></div>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> <img src="img/portfolio/imdb.jpg" alt="" class="img-responsive" />
-                        <br />
-                        <br />
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> </div>
+                        <div class="h-40"></div>
+                        
+                        <h3>Project Description</h3>
+                        <p>This project involves developing a sentiment classifier for movie reviews using machine learning. The classifier determines whether a review is positive or negative by leveraging a Naive Bayes model with a bag-of-words feature extraction technique. The model is integrated into a graphical user interface (GUI) for real-time predictions, allowing users to input a movie review and receive an instant sentiment classification along with a confidence score.</p>
+                        <img src="img/portfolio/demo.png" alt="IMDB Sentiment Classifier" class="img-responsive wrap-image" style="width: 350px; height: auto;" />
+                        
+                        <h3>Key Concepts</h3>
+                        
+                        <strong>Sentiment Classification:</strong>
+                        <ul>
+                            <li>The model classifies movie reviews as either positive or negative using a Naive Bayes classifier trained on 50,000 labeled IMDB reviews.</li>
+                            <li>The sentiment classification helps users quickly gauge the overall opinion expressed in a review without manually reading it.</li>
+                        </ul>
+                        
+                        <strong>Bag-of-Words Model:</strong>
+                        <ul>
+                            <li>Text is converted into numerical features by tokenizing words and counting their frequency in the dataset.</li>
+                            <li>Only the 10,000 most frequent words are retained, reducing dimensionality while maintaining relevant information.</li>
+                        </ul>
+                        
+                        <strong>Naive Bayes Classifier:</strong>
+                        <ul>
+                            <li>Multinomial Naive Bayes is used due to its efficiency and effectiveness in text classification tasks.</li>
+                            <li>The model was trained using an 80/20 train-test split and achieved an accuracy of 82.25%.</li>
+                        </ul>
+                        
+                        <img src="img/portfolio/confusionMatrix.png" alt="IMDB Sentiment Classifier" class="img-responsive wrap-image" style="width: 400px; height: auto;" />
+
+                        <strong>Performance Metrics:</strong>
+                        <ul>
+                            <li>Model evaluation included accuracy (82.25%), precision (83.15%), recall (79.27%), and F1-score (81.17%).</li>
+                            <li>A confusion matrix was generated to analyze misclassification trends, highlighting slightly higher false negatives.</li>
+                        </ul>
+                        
+                        <strong>GUI for Real-Time Predictions:</strong>
+                        <ul>
+                            <li>A Tkinter-based GUI allows users to input a movie review and receive a classification result.</li>
+                            <li>The GUI also displays the model’s confidence score, providing insights into the reliability of the prediction.</li>
+                        </ul>
+                        
+                        <strong>Limitations and Future Improvements:</strong>
+                        <ul>
+                            <li>The model does not capture contextual relationships between words due to the bag-of-words approach.</li>
+                            <li>Future enhancements could involve using deep learning models like transformers for improved semantic understanding.</li>
+                        </ul>
+                        
+                        <h3>Skills</h3>
+                        <ul>
+                            <li><strong>Text Preprocessing:</strong> Tokenization, stopword removal, and frequency-based feature selection.</li>
+                            <li><strong>Machine Learning:</strong> Implemented a Naive Bayes classifier for sentiment analysis.</li>
+                            <li><strong>Data Visualization:</strong> Used confusion matrices and performance metrics for model evaluation.</li>
+                            <li><strong>GUI Development:</strong> Built an interactive interface using Tkinter for real-time sentiment analysis.</li>
+                        </ul>
+                        
+                        <h3>Download Report</h3>
+                        <a href="/Users/elliseputnam/Desktop/my-website/reports/ML_Final_Report.pdf" target="_blank" rel="noopener noreferrer">
+                            <button>Download PDF</button>
+                        </a>
+                        <br>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!--DEMO08-->
     <div id="MLR-Modal" class="animated-modal">
