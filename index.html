@@ -726,34 +726,86 @@
     </div>
     
 
-    <!--DEMO08-->
-    <div id="MLR-Modal" class="animated-modal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-        <div class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
-        <div class="btn-close-modal">&times;</div>
-        <div class="clearfix"></div>
-        <div class="modal-content">
-            <div class="container">
-                <div class="portfolio-padding">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2>MLR with Cars</h2>
-                        <h4>Introduction to Statistical Modeling</h4>
-                        <h5>Spring 2023</h5>
-                        <div class="h-50"></div>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> <img src="img/portfolio/MLR.jpg" alt="" class="img-responsive" />
-                        <br />
-                        <br />
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> </div>
+   <!--DEMO08-->
+<div id="MLR-Modal" class="animated-modal">
+    <div class="close-animatedModal close-popup-modal"><i class="ion-close-round"></i></div>
+    <div class="btn-close-modal">&times;</div>
+    <div class="clearfix"></div>
+    <div class="modal-content">
+        <div class="container">
+            <div class="portfolio-padding">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>MLR for Car Price Prediction</h2>
+                    <h4>Introduction to Statistical Modeling | Spring 2023</h4>
+                    <div class="h-40"></div>
+
+                    <h3>Project Description</h3>
+                    <p>
+                        This project used multiple linear regression (MLR) to explore how factors like mileage and model year impact the resale price of used Jeep Wranglers. 
+                        The analysis compares listings from Toledo, Ohio—home to Jeep HQ—and New York, the state with the most Jeep owners, to identify regional pricing trends.
+                    </p>
+                    <img src="img/portfolio/Jeep_Price_Mileage.png" alt="Jeep Wrangler Price vs Mileage" class="img-responsive wrap-image" style="width: 400px; height: auto;" />
+
+                    <h3>Key Ideas</h3>
+
+                    <strong>Data Collection:</strong>
+                    <ul>
+                        <li>Data was manually collected from Facebook Marketplace listings in Toledo, OH and New York state.</li>
+                        <li>Each listing included price, mileage, year, and location.</li>
+                        <li>Sample size: 54 vehicles (28 Toledo, 26 NY), model years 2007–2022, mileage ranging from 4,000–170,000.</li>
+                    </ul>
+
+                    <strong>Modeling Process:</strong>
+                    <ul>
+                        <li>Used R to perform multiple linear regression.</li>
+                        <li>Initial models included location, mileage, and year as predictors.</li>
+                        <li>Final model excluded location due to lack of statistical significance.</li>
+                    </ul>
+
+                    <strong>Key Findings:</strong>
+                    <ul>
+                        <li><strong>Mileage:</strong> Price decreased by ~$1,200 for every additional 10,000 miles.</li>
+                        <li><strong>Year:</strong> Newer vehicles had significantly higher resale value.</li>
+                        <li><strong>Location:</strong> Not statistically significant, though NY vehicles had slightly lower mileage on average.</li>
+                    </ul>
+
+                    <strong>Limitations:</strong>
+                    <ul>
+                        <li>Small sample size and regional focus limit generalizability.</li>
+                        <li>Did not control for trim, condition, modifications, or private vs. dealer listings.</li>
+                        <li>Manually scraped data may have inconsistencies.</li>
+                    </ul>
+
+                    <strong>Conclusion:</strong>
+                    <ul>
+                        <li>Mileage and model year were the most reliable predictors of resale price.</li>
+                        <li>Location alone did not have a measurable effect after controlling for those variables.</li>
+                        <li>This project provided hands-on experience with regression analysis, data cleaning, and interpreting real-world consumer data.</li>
+                    </ul>
+
+                    <h3>Skills</h3>
+                    <ul>
+                        <li><strong>Data Collection:</strong> Manual scraping and entry</li>
+                        <li><strong>Statistical Analysis:</strong> Built MLR models using R</li>
+                        <li><strong>Feature Selection:</strong> Evaluated predictor significance</li>
+                        <li><strong>Data Visualization:</strong> Plotted price vs. mileage trends</li>
+                    </ul>
+
+                    <h3>Download Report</h3>
+                    <a href="reports/MLRCarProject.pdf" target="_blank" rel="noopener noreferrer">
+                        <button>Download PDF</button>
+                    </a>
+
+                    <br><br>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+
+
+
 
     <!--DEMO09-->
     <div id="MBTI-Modal" class="animated-modal">
